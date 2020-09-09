@@ -1,0 +1,55 @@
+# Robot Related and Other Params
+# ==============================
+# url: http://wiki.ros.org/costmap_2d/layered
+robot_radius: 0.3
+# footprint: [[-0.5, -0.5], [-0.5, 0.5],[0.5, 0.5], [0.5, -0.5]] 
+robot_base_frame: /base_link
+
+
+# Inflation Radius Params
+# =======================
+# url: http://wiki.ros.org/costmap_2d/hydro/inflation
+inflation_layer:
+    inflation_radius: 0.35      # Encouraged to be more that robot radius
+
+
+# Obstacle Layer Params
+# =====================
+# url: http://wiki.ros.org/costmap_2d/hydro/obstacles
+obstacle_layer:
+    obstacle_range: 2.0
+    raytrace_range: 5.0
+    combination_method: 1
+    observation_sources: laser
+    track_unknown_space: true
+
+    laser:
+        data_type: LaserScan
+        topic: /scan
+        marking: true
+        clearing: true
+        expected_update_rate: 0.8
+        min_obstacle_height: 0.0
+        max_obstacle_height: 2.0
+
+
+# Static Layer Params
+# ===================
+# url: http://wiki.ros.org/costmap_2d/hydro/staticmap
+static_layer:
+    map_topic: "/map"
+
+
+# Sonar Layer Params
+# ==================
+# url: http://wiki.ros.org/range_sensor_layer
+sonar_layer:
+    clear_threshold: 0.2
+    mark_threshold: 0.8
+    topics: ["/sonar0", "/sonar1", "/sonar2", "/sonar3", "/sonar4", "/sonar5", "/sonar6", "/sonar7"]
+    clear_on_max_reading: true
+
+
+# Other References
+# ================
+# url: https://github.com/husky/husky/tree/kinetic-devel/husky_navigation/config
