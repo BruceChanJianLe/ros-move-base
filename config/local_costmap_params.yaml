@@ -1,5 +1,5 @@
 local_costmap:
-    global_frame: /odom
+    global_frame: odom
     update_frequency: 3.0
     publish_frequency: 1.0
     static_map: false
@@ -13,8 +13,8 @@ local_costmap:
     plugins:
         - {name: static_layer,        type: "costmap_2d::StaticLayer"}
         - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
-        - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
         - {name: sonar_layer,         type: "range_sensor_layer::RangeSensorLayer"}
+        - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
 
 
 # Other References
