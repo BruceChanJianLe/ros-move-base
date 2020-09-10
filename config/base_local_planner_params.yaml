@@ -1,6 +1,7 @@
 TebLocalPlannerROS:
 
- odom_topic: husky_velocity_controller/odom
+#  odom_topic: husky_velocity_controller/odom
+ odom_topic: odometry/filtered
  map_frame: odom
 
 # Trajectory
