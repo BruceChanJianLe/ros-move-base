@@ -30,4 +30,5 @@ This repository demonstrates the usage of setting up move_base with and without 
 
 ## References  
 
+- https://answers.ros.org/question/155091/move_base-without-map/
 For details references on config files please look at each individual files for references.  
