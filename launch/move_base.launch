@@ -21,8 +21,6 @@
         <!-- Move Base Params -->
         <rosparam file="$(find move_base_wo_map)/config/move_base_params.yaml" command="load"/>
 
-        
-
     </node>
 
 </launch>
