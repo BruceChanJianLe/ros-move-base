@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="map_file" default="$(find move_base_wo_map)/maps/playpen.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+</launch>
