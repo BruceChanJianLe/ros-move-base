@@ -10,7 +10,8 @@ robot_base_frame: base_link
 # =======================
 # url: http://wiki.ros.org/costmap_2d/hydro/inflation
 inflation_layer:
-    inflation_radius: 0.35      # Encouraged to be more that robot radius
+    # inflation_radius: 0.35      # Encouraged to be more that robot radius
+    inflation_radius: 1.00        # For husky simulation
 
 
 # Obstacle Layer Params
