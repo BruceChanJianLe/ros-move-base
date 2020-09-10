@@ -1,5 +1,5 @@
 global_costmap:
-    global_frame: /map
+    global_frame: map
     update_frequency: 1.5       # Global Costmap can be updated at a slower frequency
     publish_frequency: 1.0      # Global Costmap can be updated at a slower frequency
     static_map: true
@@ -11,6 +11,7 @@ global_costmap:
     plugins:
     - {name: static_layer,        type: "costmap_2d::StaticLayer"}
     - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
+    - {name: sonar_layer,         type: "range_sensor_layer::RangeSensorLayer"}
     - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
  
 
