@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <include file="$(find move_base_wo_map)/launch/map_server.launch"/>
+    <include file="$(find move_base_wo_map)/launch/move_base.launch"/>
+    <include file="$(find move_base_wo_map)/launch/amcl.launch"/>
+
+</launch>
