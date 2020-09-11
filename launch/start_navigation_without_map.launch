@@ -10,7 +10,7 @@
 
         <!-- Local and Global Costmap Params -->
         <rosparam file="$(find move_base_wo_map)/config/local_costmap_params.yaml" command="load"/>
-        <rosparam file="$(find move_base_wo_map)/config/global_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find move_base_wo_map)/config/global_costmap_mapless_params.yaml" command="load"/>
 
         <!-- Base Global Planner -->
         <rosparam file="$(find move_base_wo_map)/config/base_global_planner_params.yaml" command="load"/>
