@@ -11,7 +11,6 @@ local_costmap:
     map_type: costmap
 
     plugins:
-        - {name: static_layer,        type: "costmap_2d::StaticLayer"}
         - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
         - {name: sonar_layer,         type: "range_sensor_layer::RangeSensorLayer"}
         - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
