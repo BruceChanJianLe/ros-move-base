@@ -2,7 +2,7 @@
 
 <launch>
 
-    <arg name="map_file" default="$(find move_base_wo_map)/maps/playpen.yaml"/>
-    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+    <arg name="map_file" default="playpen"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find move_base_wo_map)/maps/$(arg map_file).yaml" />
 
 </launch>
