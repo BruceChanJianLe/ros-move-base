@@ -3,13 +3,15 @@
 This repository demonstrates the usage of setting up move_base with and without map.  
 
 ## Package Structure
-```
+```bash
 .
 ├── CMakeLists.txt
 ├── config
 │   ├── base_global_planner_params.yaml
 │   ├── base_local_planner_params.yaml
 │   ├── costmap_common_params.yaml
+│   ├── global_costmap_mapless_params.yaml              # (For mapless navigation)
+│   ├── global_costmap_virtual_obstacle_params.yaml     # (For adding virtual obstacles in costmap)
 │   ├── global_costmap_params.yaml
 │   ├── local_costmap_params.yaml
 │   └── move_base_params.yaml
@@ -43,6 +45,11 @@ To again register static map obstacle into the master costmap you may run this c
 rosservice call /move_base/clear_costmaps "{}"
 ```
 
+## Virtual Obstacle (costmap_prohibition_layer)
+
+Please refer to `global_costmap_virtual_obstacle_params.yaml` and `costmap_common_params.yaml` for details.  
+
+Launch the `start_navigation_with_virtual_obstacle.launch` launch file to observe how virtual obstacle is added into the global costmap.  
 ## References  
 
 - https://answers.ros.org/question/155091/move_base-without-map/
