@@ -51,6 +51,15 @@ sonar_layer:
     clear_on_max_reading: true
 
 
+# Virtual Obstacles Params
+# ========================
+# url: http://wiki.ros.org/costmap_prohibition_layer
+virtual_obstacle_layer:
+    prohibition_areas:
+        - [5.0, -1.0]
+        - [-3.0, -1.0]
+
+
 # Other References
 # ================
 # url: https://github.com/husky/husky/tree/kinetic-devel/husky_navigation/config
