@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <!-- <rosparam file="$(find move_base_wo_map)/config_virtualwall/virtual_obstacles.yaml" command="load"/> -->
+    <include file="$(find move_base_wo_map)/launch/map_server.launch"/>
+    <include file="$(find move_base_wo_map)/launch/amcl.launch"/>
+    <include file="$(find move_base_wo_map)/launch/move_base_virtualwall.launch"/>
+
+</launch>
