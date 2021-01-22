@@ -55,3 +55,4 @@ Launch the `start_navigation_with_virtual_obstacle.launch` launch file to observ
 - https://answers.ros.org/question/155091/move_base-without-map/
 - For more detail references on config files please look at each individual file for references.  
 - https://answers.ros.org/question/316191/static_layer-gets-deleted-by-obstacle_layer-in-global_costmap/
+- Ghost LaserScan [link](https://blog.zhaw.ch/icclab/configuring-the-ros-navigation-stack-on-a-new-robot/)
